@@ -29,8 +29,8 @@
 
 # Extra:
 
-## Kernel Integrity Checking
+## 8.0.0: Kernel Integrity Checking
 
-## Cryptographic File System
+## 9.0.0: Cryptographic File System
 
-## Rootkit Prevention
+## 10.0.0: Rootkit Prevention
