@@ -1,4 +1,4 @@
-# Version Development Breakdown
+# Phase Version Development Breakdown
 
 ## 1.0.0: Environment Setup:
 
