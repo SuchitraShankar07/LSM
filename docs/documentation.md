@@ -76,10 +76,13 @@ The LSM interface is four functions:
 `
 int register_security
     (struct security_operations *ops);
+
 int unregister_security
     (struct security_operations *ops);
+
 int mod_reg_security 
     (const char *name, struct security_operations *ops);
+    
 int mod_unreg_security  
     (const char *name, struct      security_operations *ops);
 `
