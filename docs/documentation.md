@@ -59,5 +59,13 @@ To start a domain:
 
 ## LSM development:
 
-Notes:
-- Kernel hook is a technique where a system call is slightly modified by a "hook". This can be done for legitimate puposes but can also be exploited by malware.
+### Kernel hooks and LSM:
+
+Kernel hook is a technique where a system call is slightly modified by a "hook". This can be done for legitimate puposes but can also be exploited by malware.
+
+LSMs are not modules, but extensions which provide a framework for kernel hooks
+
+In order to see the list of running LSMs, the following command can be executed.
+
+`cat /sys/kernel/security/lsm`
+
