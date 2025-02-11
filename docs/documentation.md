@@ -54,3 +54,5 @@ Graphical Interface to manage VMS:
 To start a domain:
 
 `virt start <DOMAIN>`
+
+### VMware Workstation:
