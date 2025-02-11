@@ -56,3 +56,8 @@ To start a domain:
 `virt start <DOMAIN>`
 
 ### VMware Workstation:
+
+## LSM development:
+
+Notes:
+- Kernel hook is a technique where a system call is slightly modified by a "hook". This can be done for legitimate puposes but can also be exploited by malware.
