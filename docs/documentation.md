@@ -59,9 +59,11 @@ To start a domain:
 
 ## LSM development:
 
-### Kernel hooks and LSM:
+### Kernel hooks:
 
 Kernel hook is a technique where a system call is slightly modified by a "hook". This can be done for legitimate puposes but can also be exploited by malware.
+
+### LSMs:
 
 LSMs are not modules, but extensions which provide a framework for kernel hooks
 
@@ -69,3 +71,15 @@ In order to see the list of running LSMs, the following command can be executed.
 
 `cat /sys/kernel/security/lsm`
 
+The LSM interface is four functions:
+
+`
+int register_security
+    (struct security_operations *ops);
+int unregister_security
+    (struct security_operations *ops);
+int mod_reg_security 
+    (const char *name, struct security_operations *ops);
+int mod_unreg_security  
+    (const char *name, struct      security_operations *ops);
+`
