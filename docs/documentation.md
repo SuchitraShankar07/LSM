@@ -73,11 +73,7 @@ In order to see the list of running LSMs, the following command can be executed.
 
 The LSM interface is four functions:
 
-int register_security (struct security_operations *ops);
-
-int unregister_security (struct security_operations *ops);
-
-int mod_reg_security (const char *name, struct security_operations *ops);
-
-int mod_unreg_security (const char *name, struct security_operations *ops);
-
+- int register_security (struct security_operations *ops);
+- int unregister_security (struct security_operations *ops);
+- int mod_reg_security (const char *name, struct security_operations *ops);
+- int mod_unreg_security (const char *name, struct security_operations *ops);
