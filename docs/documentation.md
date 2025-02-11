@@ -77,3 +77,6 @@ The LSM interface is four functions:
 - int unregister_security (struct security_operations *ops);
 - int mod_reg_security (const char *name, struct security_operations *ops);
 - int mod_unreg_security (const char *name, struct security_operations *ops);
+
+If the security_operations function fails, it means some other security module has already been loaded. When this happens the mod_reg_seurity function is called in an attempt to registed with this security module.
+
