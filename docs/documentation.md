@@ -42,3 +42,15 @@ Kernel Development Tools:
   libssl-dev clang llvm`
 
 `sudo apt install -y linux-source`
+
+Restarting domain:
+
+`virsh --connect qemu:///system start security_os`
+
+Graphical Interface to manage VMS:
+
+`virt-manager`
+
+To start a domain:
+
+`virt start <DOMAIN>`
