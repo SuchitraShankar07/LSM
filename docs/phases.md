@@ -23,6 +23,8 @@
 - 2.1.2: Create an LSM skeleton
 - 2.1.3: Testing the LSM skeleton
 
+### 2.2.0: Implementing the MAC model:
+
 ## 3.0.0: Security Labels for Access
 
 ## 4.0.0: Syscall filtering
