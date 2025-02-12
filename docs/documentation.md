@@ -96,14 +96,13 @@ Now we compile and install the kernel with the LSM included.
 Navigate to Security Options and enable Test LSM
 
 Then compile the kernel:
-`
+
 make -j$(nproc)
 sudo make modules_install
 sudo make install
-`
+
 
 Update GRUB:
-`
+
 sudo update-grub
 sudo reboot
-`
