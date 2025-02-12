@@ -80,8 +80,30 @@ First we will download the Linux kernel:
 
 `git clone --depth=1 https://github.com/torvalds/linux.git`
 
-The LSM file named "LSM_test" is to be created in /usr/src.  In order to tell the kernel to build the LSM, the following three steps are followed:
+Next, test_lsm directroy is created for our custom LSM. To this we will add our test_lsm.c file which contains the skeleton for our lsm module.
 
-1. Creake a Makefile
-2. Create a Kconfig file
+In order to tell the kernel to build the LSM, the following three steps are followed:
+
+1. Modify `security/Kconfig` to register our LSM
+2. Modify `security/Makefile` to add our LSM module
+3. Modify `security.c` to add our hook
 3. Tell the security Makefile and Kconfig files about the LSM, editing security/Makefile and security/Kconfig
+
+Now we compile and install the kernel with the LSM included.
+
+`make menuconfig`
+
+Navigate to Security Options and enable Test LSM
+
+Then compile the kernel:
+`
+make -j$(nproc)
+sudo make modules_install
+sudo make install
+`
+
+Update GRUB:
+`
+sudo update-grub
+sudo reboot
+`
