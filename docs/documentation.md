@@ -51,10 +51,6 @@ Graphical Interface to manage VMS:
 
 `virt-manager`
 
-To start a domain:
-
-`virt start <DOMAIN>`
-
 ### VMware Workstation:
 
 ## LSM development:
@@ -80,3 +76,12 @@ The LSM interface is four functions:
 
 If the security_operations function fails, it means some other security module has already been loaded. When this happens the mod_reg_seurity function is called in an attempt to registed with this security module.
 
+First we will download the Linux kernel:
+
+`git clone --depth=1 https://github.com/torvalds/linux.git`
+
+The LSM file named "LSM_test" is to be created in /usr/src.  In order to tell the kernel to build the LSM, the following three steps are followed:
+
+1. Creake a Makefile
+2. Create a Kconfig file
+3. Tell the security Makefile and Kconfig files about the LSM, editing security/Makefile and security/Kconfig

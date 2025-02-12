@@ -1,7 +1,7 @@
 # References:
 
 ## Github:
-(https://github.com/SuchitraShankar07/LSM)
+https://github.com/SuchitraShankar07/LSM
 
 ## LSM and MAC:
 
@@ -10,3 +10,5 @@
 - LSM read up: https://www.kernel.org/doc/html/v4.16/admin-guide/LSM/index.html
 
 - Using the Kernel Security Module Interface: https://www.linuxjournal.com/article/6279
+
+- The Linux kernel: https://github.com/torvalds/linux
