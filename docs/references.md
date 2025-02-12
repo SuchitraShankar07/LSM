@@ -12,3 +12,5 @@ https://github.com/SuchitraShankar07/LSM
 - Using the Kernel Security Module Interface: https://www.linuxjournal.com/article/6279
 
 - The Linux kernel: https://github.com/torvalds/linux
+
+- How to write an LSM: https://www.youtube.com/watch?v=4rFxZw3USIs
