@@ -14,3 +14,5 @@ https://github.com/SuchitraShankar07/LSM
 - The Linux kernel: https://github.com/torvalds/linux
 
 - How to write an LSM: https://www.youtube.com/watch?v=4rFxZw3USIs
+
+- LSM General Security hooks for Linux: https://www.kernel.org/doc/html/v5.8/security/lsm.html
